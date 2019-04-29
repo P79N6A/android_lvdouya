@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_40"
+        android:paddingTop="@dimen/px_40">
+
+        <ImageView
+            android:id="@+id/ivChoose"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:src="@mipmap/zx_108"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/ivHead"
+                android:layout_width="@dimen/px_200"
+                android:layout_height="@dimen/px_150"
+                app:sriv_border_color="#e6e6e6"
+                app:sriv_border_width="@dimen/px_4"
+                app:sriv_left_bottom_corner_radius="@dimen/px_10"
+                app:sriv_left_top_corner_radius="@dimen/px_10"
+                app:sriv_right_bottom_corner_radius="@dimen/px_10"
+                app:sriv_right_top_corner_radius="@dimen/px_10"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_24"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px_36"
+                    tools:text="LEGO乐高积木飞机教程：降落伞 "/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#e75345"
+                    android:textSize="@dimen/px_36"
+                    tools:text="LEGO乐高积木飞机教程：降落伞 "/>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px_46"
+                        android:layout_height="@dimen/px_38"
+                        android:src="@mipmap/content_8"/>
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_22"
+                        android:text="共12节"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/px_30"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="￥ 9.00"
+            android:textColor="#333333"
+            android:textSize="@dimen/px_40"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvReduce"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px_40"
+                android:text=" - "
+                android:textColor="#585858"
+                android:textSize="@dimen/px_48"/>
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_66"
+                android:background="@drawable/bg_20"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minWidth="@dimen/px_110"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:text="0"
+                android:textColor="#333333"
+                android:textColorHint="#333333"
+                android:textSize="@dimen/px_40"/>
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="@dimen/px_40"
+                android:text=" + "
+                android:textColor="#585858"
+                android:textSize="@dimen/px_48"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/priceAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="￥ 9.00"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <ImageView
+                android:id="@+id/del"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                android:layout_gravity="right|bottom"
+                android:src="@mipmap/delete"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="#eeeeee"/>
+
+
+</LinearLayout>

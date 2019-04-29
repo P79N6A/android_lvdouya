@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/px_5"
+    android:layout_marginTop="@dimen/px_5"
+    tools:ignore="PxUsage">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/ivPpt"
+        android:layout_width="@dimen/px_260"
+        android:layout_height="@dimen/px_160"
+        android:layout_centerInParent="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:sriv_border_color="#87c444"
+        app:sriv_border_width="@dimen/px_8"
+        app:sriv_left_bottom_corner_radius="@dimen/px_15"
+        app:sriv_left_top_corner_radius="@dimen/px_15"
+        app:sriv_right_bottom_corner_radius="@dimen/px_15"
+        app:sriv_right_top_corner_radius="@dimen/px_15"
+        tools:background="#ff0000"/>
+
+    <TextView
+        android:id="@+id/tvPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ivPpt"
+        android:layout_marginLeft="@dimen/px_15"
+        android:layout_marginTop="@dimen/px_12"
+        android:background="@drawable/bg_06"
+        android:gravity="center"
+        android:minHeight="@dimen/px_19"
+        android:minWidth="@dimen/px_34"
+        android:textColor="#fdfeff"
+        android:textSize="@dimen/px_18"/>
+
+</RelativeLayout>

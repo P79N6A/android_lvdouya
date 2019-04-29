@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hhkj.dyedu"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.hhkj.dyedu.MainApplication"
+        android:allowBackup="true"
+        android:icon="${app_icon}"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.splash.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.user.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Blue" />
+
+        <activity
+            android:name=".ui.activity.user.ForgetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Blue" />
+
+        <activity
+            android:name=".ui.activity.user.CountryPickActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Blue" />
+
+        <activity
+            android:name=".ui.activity.user.HelperActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+
+
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.RegisterStep01Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.RegisterStep02Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.RegisterStep03Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity
+            android:name=".ui.activity.LoginSuccessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.user.PersonalCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <!--<activity-->
+        <!--android:name=".ui.activity.CourseCenterActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden|screenSize|locale"-->
+        <!--android:screenOrientation="sensorLandscape"/>-->
+        <activity
+            android:name=".ui.activity.ThemeListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.CourseThemeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.ThemeCategoryListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.ShoppingCartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.PayWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.ScheduleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.TeacherListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.CreateAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.ClassDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.StudentListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.CreateStudentAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.ChooseCourseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.BuildPicActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity android:name=".ui.activity.ThemeCategoryCenter2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape"/>
+
+        <activity
+            android:name=".ui.activity.ThemeCategoryCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ui.activity.RecommendActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity
+            android:name=".ui.activity.ForgetSuccessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="sensorLandscape" />
+
+
+
+        <service
+            android:name=".view.floatball.Service.StartFloatBallService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage,HardcodedText,RtlHardcoded,RtlSymmetry">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_121"
+        android:background="#86DBF4"
+        tools:ignore="PxUsage">
+
+        <ImageView
+            android:layout_width="@dimen/px_1194"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_new_02" />
+
+        <ImageView
+            android:layout_width="@dimen/px_627"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_new_01" />
+
+
+        <RelativeLayout
+            android:id="@+id/layoutLeft"
+            android:layout_width="@dimen/px_120"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="@dimen/px_57"
+                android:layout_height="@dimen/px_57"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_30"
+                android:src="@mipmap/new_13" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="测试标题"
+            android:textColor="#fefefe"
+            android:textSize="@dimen/px_48"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!--账号输入框-->
+    <TextView
+        android:id="@+id/et01"
+        android:layout_width="@dimen/px_933"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_214"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="恭喜您修改密码成功！"
+        android:textColor="#6a6a6a"
+        android:textSize="@dimen/px_48" />
+
+
+    <ImageView
+        android:layout_width="@dimen/px_64"
+        android:layout_height="@dimen/px_64"
+        android:layout_alignTop="@+id/et01"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/et01"
+        android:src="@mipmap/new_101" />
+
+    <TextView
+        android:id="@+id/et02"
+        android:layout_width="@dimen/px_933"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_50"
+        android:gravity="left"
+        android:text="10秒后自动跳转至登录页面，您也可以通过点击下方的完成
+按钮手动页面登录"
+        android:textColor="#6a6a6a"
+        android:textSize="@dimen/px_36" />
+
+    <LinearLayout
+        android:layout_width="@dimen/px_933"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_40">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btLogin"
+            android:layout_width="@dimen/px_370"
+            android:layout_height="@dimen/px_70"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_38"
+            app:rv_backgroundColor="#FFDF00"
+            app:rv_cornerRadius="@dimen/px_35" />
+    </LinearLayout>
+
+</RelativeLayout>

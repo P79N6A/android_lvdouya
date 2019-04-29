@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px_508"
+    android:layout_height="@dimen/px_192"
+    android:background="@mipmap/new_43"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="PxUsage">
+
+    <com.hhkj.dyedu.view.ScaleLinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="@dimen/px_107"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_26"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:src="@mipmap/new_37" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_15"
+            android:text="@string/tool_01"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_24" />
+    </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+    <com.hhkj.dyedu.view.ScaleLinearLayout
+        android:id="@+id/layout02"
+        android:layout_width="@dimen/px_107"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_44"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:src="@mipmap/new_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_15"
+            android:text="@string/tool_02"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_24" />
+    </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+    <com.hhkj.dyedu.view.ScaleLinearLayout
+        android:id="@+id/layout03"
+        android:layout_width="@dimen/px_107"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:src="@mipmap/new_34" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_15"
+            android:text="@string/tool_03"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_24" />
+    </com.hhkj.dyedu.view.ScaleLinearLayout>
+</LinearLayout>

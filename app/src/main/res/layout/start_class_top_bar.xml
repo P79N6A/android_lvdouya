@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/start_class_top_bar_height"
+    android:layout_alignParentTop="true"
+    android:background="#F29000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/px_32"
+    android:paddingRight="@dimen/px_32"
+    tools:ignore="PxUsage">
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/px_57"
+        android:layout_height="@dimen/px_57"
+        android:src="@mipmap/new_13"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_39"
+        android:gravity="center_vertical"
+        android:maxWidth="380dp"
+        android:singleLine="true"
+        android:text="课程主题：《遨游太空航天飞机》"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px_48"/>
+
+    <ImageView
+        android:id="@+id/ivStar01"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/broadcast_21"/>
+
+    <ImageView
+        android:id="@+id/ivStar02"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/broadcast_21"/>
+
+    <ImageView
+        android:id="@+id/ivStar03"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/broadcast_21"/>
+
+    <ImageView
+        android:id="@+id/ivStar04"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/broadcast_21"/>
+
+    <ImageView
+        android:id="@+id/ivStar05"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/broadcast_21"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        app:sriv_left_bottom_corner_radius="18dp"
+        app:sriv_left_top_corner_radius="18dp"
+        app:sriv_right_bottom_corner_radius="18dp"
+        app:sriv_right_top_corner_radius="18dp"
+        tools:background="#ff0000"/>
+
+    <ImageView
+        android:id="@+id/iv100"
+        android:layout_width="@dimen/px_84"
+        android:layout_height="@dimen/px_84"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:src="@mipmap/new_32"/>
+
+    <ImageView
+        android:id="@+id/iv10"
+        android:layout_width="@dimen/px_84"
+        android:layout_height="@dimen/px_84"
+        android:src="@mipmap/new_31"/>
+</LinearLayout>
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="PxUsage,HardcodedText">
+
+    <Button
+        android:id="@+id/bt01"
+        android:layout_width="@dimen/px_694"
+        android:layout_height="@dimen/px_134"
+        android:background="@drawable/bg_61bdec_corners_67"
+        android:text="创建账户"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_56"/>
+
+    <Button
+        android:id="@+id/bt02"
+        android:layout_width="@dimen/px_694"
+        android:layout_height="@dimen/px_134"
+        android:layout_marginTop="@dimen/px_74"
+        android:background="@drawable/bg_ffdf00_corners_67"
+        android:text="我有一个账户"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_56"/>
+</LinearLayout>

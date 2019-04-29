@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_37"
+        android:scaleType="fitXY"
+        android:src="@mipmap/new_108"/>
+
+    <ImageView
+        android:id="@+id/ivBottom01"
+        android:layout_width="@dimen/px_68"
+        android:layout_height="@dimen/px_68"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/px_150"
+        android:src="@mipmap/new_52"/>
+
+    <ImageView
+        android:id="@+id/ivBottom02"
+        android:layout_width="@dimen/px_68"
+        android:layout_height="@dimen/px_68"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/px_63"
+        android:src="@mipmap/new_49"/>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/px_216"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_30"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_97"
+            android:orientation="horizontal">
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tvStart"
+                android:layout_width="@dimen/px_183"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="#ffffff"
+                app:rv_backgroundColor="#98D94B"
+                app:rv_cornerRadius="@dimen/px_40"/>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tvFinish"
+                android:layout_width="@dimen/px_183"
+                android:layout_height="@dimen/px_80"
+                android:layout_marginLeft="@dimen/px_79"
+                android:layout_marginRight="@dimen/px_79"
+                android:gravity="center"
+                android:text="结束"
+                android:textColor="#ffffff"
+                app:rv_backgroundColor="#118EEF"
+                app:rv_cornerRadius="@dimen/px_40"/>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tvReset"
+                android:layout_width="@dimen/px_183"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center"
+                android:text="清除"
+                android:textColor="#ffffff"
+                app:rv_backgroundColor="#D79752"
+                app:rv_cornerRadius="@dimen/px_40"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_36"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_32"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv02"
+                android:layout_width="@dimen/px_139"
+                android:layout_height="@dimen/px_59"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/bt_over"/>
+
+            <ImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_48"
+                android:layout_toLeftOf="@id/ivRight"
+                android:src="@mipmap/competition_06"/>
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/competition_07"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/px_144"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/px_53"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="@dimen/px_76"
+            android:layout_height="@dimen/px_76"
+            android:src="@mipmap/new_71"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="加组"
+            android:textColor="#7f7f7f"
+            android:textSize="@dimen/px_34"/>
+
+
+        <ImageView
+            android:id="@+id/ivReduce"
+            android:layout_width="@dimen/px_76"
+            android:layout_height="@dimen/px_76"
+            android:layout_marginTop="@dimen/px_44"
+            android:src="@mipmap/new_72"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="减组"
+            android:textColor="#7f7f7f"
+            android:textSize="@dimen/px_34"/>
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:layout_width="@dimen/px_292"
+        android:layout_height="@dimen/px_74"
+        android:layout_marginLeft="@dimen/px_100"
+        android:gravity="center"
+        android:text="团队竞赛"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px_48"
+        app:rv_backgroundColor="#FFB32F"
+        app:rv_cornerRadius="@dimen/px_20"/>
+</FrameLayout>

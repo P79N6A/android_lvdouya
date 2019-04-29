@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/new_48"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <include layout="@layout/top_title_bar_01"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_40"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+                <EditText
+                    android:id="@+id/et07"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_24"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+                <EditText
+                    android:id="@+id/et08"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_24"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+
+                <TextView
+                    android:id="@+id/tvPrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+
+                <EditText
+                    android:id="@+id/et01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_24"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入密码"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+                <EditText
+                    android:id="@+id/et02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_24"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认密码"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+                <EditText
+                    android:id="@+id/et03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="@dimen/px_562"
+                android:layout_height="@dimen/px_117"
+                android:layout_marginTop="@dimen/px_24"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_40"
+                android:paddingRight="@dimen/px_40"
+                rv:rv_backgroundColor="#FFFFFF"
+                rv:rv_cornerRadius="@dimen/px_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="#FF939393"
+                    android:textSize="@dimen/px_36"/>
+
+                <EditText
+                    android:id="@+id/et04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px_32"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/btSure"
+                android:layout_width="@dimen/px_559"
+                android:layout_height="@dimen/px_108"
+                android:layout_marginBottom="@dimen/px_50"
+                android:layout_marginTop="@dimen/px_50"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/px_48"
+                rv:rv_backgroundColor="#FFDF00"
+                rv:rv_backgroundPressColor="#a9a9a9"
+                rv:rv_cornerRadius="@dimen/px_54"
+                rv:rv_isRippleEnable="false"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

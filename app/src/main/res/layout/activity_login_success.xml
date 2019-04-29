@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:layout_width="@dimen/px_140"
+        android:layout_height="@dimen/px_140"
+        android:src="@mipmap/kqs_logo"
+        android:layout_marginLeft="@dimen/px_60"
+        android:layout_marginTop="@dimen/px_50"
+        android:background="@drawable/bg_ffffff_corners_18"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/card01"
+            android:layout_width="@dimen/px_427"
+            android:layout_height="@dimen/px_427"
+            android:background="@mipmap/new_03" />
+
+        <Button
+            android:id="@+id/card02"
+            android:layout_width="@dimen/px_427"
+            android:layout_height="@dimen/px_427"
+            android:layout_marginLeft="@dimen/px_63"
+            android:layout_marginRight="@dimen/px_63"
+            android:background="@mipmap/new_02" />
+
+        <Button
+            android:id="@+id/card03"
+            android:layout_width="@dimen/px_427"
+            android:layout_height="@dimen/px_427"
+            android:background="@mipmap/new_01" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px_60"
+        android:text="@string/version"
+        android:textColor="#000000"
+        android:textSize="@dimen/px_26" />
+
+    <ImageView
+        android:id="@+id/ivHelper"
+        android:layout_width="@dimen/px_318"
+        android:layout_height="@dimen/px_318"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/px_15"
+        android:layout_marginRight="@dimen/px_38"
+        android:src="@mipmap/help" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px_100"
+        android:layout_marginTop="@dimen/px_50"
+        android:text="公告"
+        android:textSize="@dimen/px_50"
+        android:textColor="@color/color_white"/>
+
+</RelativeLayout>

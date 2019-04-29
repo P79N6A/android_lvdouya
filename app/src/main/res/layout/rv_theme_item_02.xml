@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px_455"
+    android:layout_height="@dimen/px_485"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/px_53"
+    android:layout_marginLeft="@dimen/px_28"
+    android:layout_marginRight="@dimen/px_28"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <com.hhkj.dyedu.view.ThemeBgView
+        android:id="@+id/themeBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/px_25"
+        android:layout_marginTop="@dimen/px_25"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_337">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/ivHead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:sriv_left_bottom_corner_radius="@dimen/px_0"
+                app:sriv_left_top_corner_radius="@dimen/px_60"
+                app:sriv_right_bottom_corner_radius="@dimen/px_0"
+                app:sriv_right_top_corner_radius="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_50"
+                android:layout_gravity="bottom|right"
+                android:background="#5DC0FB"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px_9"
+                android:paddingRight="@dimen/px_9"
+                android:text="￥ 100.00"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_27" />
+        </FrameLayout>
+
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            rv:rv_backgroundColor="#F29000"
+            rv:rv_cornerRadius_BL="@dimen/px_60"
+            rv:rv_cornerRadius_BR="@dimen/px_60">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_36"
+                tools:text="小汽车拼装课程" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_28"
+                tools:text="小汽车拼装课程" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:id="@+id/layoutLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/px_25"
+        android:layout_marginTop="@dimen/px_25"
+        app:rv_backgroundColor="#7F000000"
+        app:rv_cornerRadius="@dimen/px_60">
+
+        <ImageView
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/dy_100" />
+    </com.flyco.roundview.RoundRelativeLayout>
+</FrameLayout>

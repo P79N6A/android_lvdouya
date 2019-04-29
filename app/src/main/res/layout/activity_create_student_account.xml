@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/new_48"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <include layout="@layout/top_title_bar_01"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_82"
+                android:paddingLeft="@dimen/px_20"
+                android:text="家长手机"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:inputType="number"
+                android:maxLength="20"
+                android:id="@+id/et01"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="学生姓名"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:id="@+id/et02"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="年龄"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:id="@+id/et03"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="性别"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:id="@+id/et04"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="学习情况"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:id="@+id/et05"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="密码"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:id="@+id/et06"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+            <TextView
+                android:layout_width="@dimen/px_703"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_14"
+                android:layout_marginTop="@dimen/px_14"
+                android:paddingLeft="@dimen/px_20"
+                android:text="确认密码"
+                android:textColor="#9f9f9f"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:id="@+id/et07"
+                android:layout_width="@dimen/px_703"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/bg_52"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_36"/>
+            <com.flyco.roundview.RoundTextView
+                android:layout_marginTop="@dimen/px_56"
+                android:layout_marginBottom="@dimen/px_54"
+                android:id="@+id/btSure"
+                android:layout_width="@dimen/px_701"
+                android:layout_height="@dimen/px_108"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/px_48"
+                rv:rv_backgroundColor="#FFDF00"
+                rv:rv_backgroundPressColor="#a9a9a9"
+                rv:rv_cornerRadius="@dimen/px_54"
+                rv:rv_isRippleEnable="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

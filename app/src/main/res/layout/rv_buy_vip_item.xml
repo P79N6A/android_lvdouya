@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="@dimen/px_316"
+    android:layout_height="@dimen/px_371"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/px_28"
+    android:layout_marginRight="@dimen/px_28"
+    android:background="@drawable/bg_26"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34"/>
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 100.00"
+        android:textColor="#FF4A4A4A"
+        android:textSize="@dimen/px_48"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="42"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_40"
+        android:text="一个月"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/px_36"/>
+</LinearLayout>

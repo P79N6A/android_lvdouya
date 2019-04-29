@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    tools:ignore="PxUsage,HardcodedText,RtlHardcoded,RtlSymmetry">
+
+    <!--<include layout="@layout/top_title_bar_05" />-->
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_121"
+        android:background="#86DBF4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="PxUsage">
+
+        <ImageView
+            android:layout_width="@dimen/px_1194"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_new_02" />
+
+        <ImageView
+            android:layout_width="@dimen/px_627"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_new_01" />
+
+        <RelativeLayout
+            android:id="@+id/layoutLeft"
+            android:layout_width="@dimen/px_120"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="@dimen/px_57"
+                android:layout_height="@dimen/px_57"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_30"
+                android:src="@mipmap/new_13" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="测试标题"
+            android:textColor="#fefefe"
+            android:textSize="@dimen/px_48"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout001"
+        android:layout_width="@dimen/px_562"
+        android:layout_height="@dimen/px_117"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_100"
+        android:background="@drawable/bg_ffffff_corners_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTop">
+        <TextView
+            android:layout_marginLeft="@dimen/px_10"
+            android:id="@+id/tvGetAreaCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="#c8c8cb"
+            android:textSize="@dimen/px_34" />
+
+        <ImageView
+            android:id="@+id/ivAreaChoose"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/px_14"
+            android:src="@mipmap/unfold" />
+        <!--账号输入框-->
+        <EditText
+            android:id="@+id/et01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ffffff_corners_18"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/px_126"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/px_30" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px_24"
+        android:text="@string/forget_01"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="@id/layout001"
+        app:layout_constraintRight_toLeftOf="@id/layout001"
+        app:layout_constraintTop_toTopOf="@id/layout001" />
+
+    <LinearLayout
+        android:id="@+id/layout04"
+        android:layout_width="@dimen/px_562"
+        android:layout_height="@dimen/px_117"
+        android:layout_marginTop="@dimen/px_55"
+        android:background="@drawable/bg_ffffff_corners_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout001">
+
+        <EditText
+            android:id="@+id/etcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/px_126"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/px_30" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tvGetCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_58"
+            android:layout_marginRight="@dimen/px_17"
+            android:gravity="center"
+            android:maxWidth="@dimen/px_200"
+            android:paddingLeft="@dimen/px_19"
+            android:paddingRight="@dimen/px_19"
+            android:singleLine="true"
+            android:text="@string/login_11"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_30"
+            app:rv_backgroundColor="#BCBCBC"
+            app:rv_cornerRadius="@dimen/px_5" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px_24"
+        android:text="@string/forget_02"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="@id/layout04"
+        app:layout_constraintRight_toLeftOf="@+id/layout04"
+        app:layout_constraintTop_toTopOf="@id/layout04" />
+
+    <!--账号输入框-->
+    <EditText
+        android:id="@+id/et02"
+        android:layout_width="@dimen/px_562"
+        android:layout_height="@dimen/px_117"
+        android:layout_marginTop="@dimen/px_103"
+        android:background="@drawable/bg_ffffff_corners_18"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/px_126"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/px_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout04" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et02"
+        android:layout_marginRight="@dimen/px_24"
+        android:layout_toLeftOf="@+id/et02"
+        android:text="@string/forget_03"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="@id/et02"
+        app:layout_constraintRight_toLeftOf="@+id/et02"
+        app:layout_constraintTop_toTopOf="@id/et02" />
+
+    <EditText
+        android:id="@+id/et03"
+        android:layout_width="@dimen/px_562"
+        android:layout_height="@dimen/px_117"
+        android:layout_below="@+id/et02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_55"
+        android:background="@drawable/bg_ffffff_corners_18"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/px_126"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/px_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et02" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et03"
+        android:layout_marginRight="@dimen/px_24"
+        android:layout_toLeftOf="@+id/et03"
+        android:text="@string/forget_04"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="@id/et03"
+        app:layout_constraintRight_toLeftOf="@+id/et03"
+        app:layout_constraintTop_toTopOf="@id/et03" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="@dimen/px_559"
+        android:layout_height="@dimen/px_108"
+        android:layout_below="@+id/et03"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_62"
+        android:background="@drawable/bg_ffdf00_corners_54"
+        android:text="@string/forget_05"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et03" />
+</android.support.constraint.ConstraintLayout>

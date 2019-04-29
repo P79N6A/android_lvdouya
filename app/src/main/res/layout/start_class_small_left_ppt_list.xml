@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/start_class_left_ppt_width"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+    android:layout_marginTop="@dimen/start_class_top_bar_height"
+    android:background="#FDFEFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:id="@+id/ivPageLeft"
+        android:layout_width="@dimen/px_58"
+        android:layout_height="@dimen/px_38"
+        android:layout_marginBottom="@dimen/px_5"
+        android:layout_marginTop="@dimen/px_95"
+        android:background="@mipmap/dy_12"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPpt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/ivPageRight"
+        android:layout_width="@dimen/px_58"
+        android:layout_height="@dimen/px_38"
+        android:layout_marginBottom="@dimen/px_95"
+        android:layout_marginTop="@dimen/px_5"
+        android:background="@mipmap/dy_13"/>
+
+</LinearLayout>

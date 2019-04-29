@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_688"
+    android:layout_height="@dimen/px_464"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_600"
+        android:layout_height="wrap_content">
+
+        <!--背景-->
+        <ImageView
+            android:id="@+id/ivBg"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/alarm_01"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100">
+
+            <View
+                android:id="@+id/view01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:id="@+id/view02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!--倒计时布局模块-->
+        <LinearLayout
+            android:id="@+id/layout01"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_200"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_126">
+
+            <LinearLayout
+                android:layout_width="@dimen/px_60"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivCountdownAdd01"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_04"/>
+
+                <com.hhkj.dyedu.view.NumTextView
+                    android:id="@+id/tvCountdown01"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="@dimen/px_100"/>
+
+                <ImageView
+                    android:id="@+id/ivCountdownReduce01"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_03"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/px_60"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_44"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivCountdownAdd02"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_04"/>
+
+                <com.hhkj.dyedu.view.NumTextView
+                    android:id="@+id/tvCountdown02"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="@dimen/px_100"/>
+
+                <ImageView
+                    android:id="@+id/ivCountdownReduce02"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_03"/>
+
+
+            </LinearLayout>
+
+            <com.hhkj.dyedu.view.NumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_100"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_44"
+                android:text=":"
+                android:textSize="@dimen/px_100"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/px_60"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_44"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivCountdownAdd03"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_04"/>
+
+                <com.hhkj.dyedu.view.NumTextView
+                    android:id="@+id/tvCountdown03"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="@dimen/px_100"/>
+
+                <ImageView
+                    android:id="@+id/ivCountdownReduce03"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_03"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/px_60"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_44"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivCountdownAdd04"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_04"/>
+
+                <com.hhkj.dyedu.view.NumTextView
+                    android:id="@+id/tvCountdown04"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="@dimen/px_100"/>
+
+                <ImageView
+                    android:id="@+id/ivCountdownReduce04"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:src="@mipmap/alarm_03"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--计时器布局模块-->
+        <LinearLayout
+            tools:visibility="gone"
+            android:id="@+id/layout02"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_200"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_126">
+            <com.hhkj.dyedu.view.NumTextView
+                android:id="@+id/tvTimer01"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_140"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="@dimen/px_120"/>
+
+
+
+            <com.hhkj.dyedu.view.NumTextView
+                android:id="@+id/tvTimer02"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_140"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="@dimen/px_120"/>
+
+            <com.hhkj.dyedu.view.NumTextView
+
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_100"
+                android:layout_gravity="center_vertical"
+                android:text=":"
+                android:textSize="@dimen/px_100"/>
+
+            <com.hhkj.dyedu.view.NumTextView
+                android:id="@+id/tvTimer03"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_140"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="@dimen/px_120"/>
+            <com.hhkj.dyedu.view.NumTextView
+                android:id="@+id/tvTimer04"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_140"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="@dimen/px_120"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_360"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivBt01"
+                android:src="@mipmap/alarm_05"
+                android:layout_width="@dimen/px_160"
+                android:layout_height="@dimen/px_80"/>
+
+            <ImageView
+                android:id="@+id/ivBt02"
+                android:layout_marginLeft="@dimen/px_68"
+                android:src="@mipmap/alarm_06"
+                android:layout_width="@dimen/px_160"
+                android:layout_height="@dimen/px_80"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/px_84"
+        android:layout_height="@dimen/px_84"
+        android:layout_marginLeft="@dimen/px_4"
+        android:layout_marginTop="@dimen/px_80"
+        android:padding="@dimen/px_8"
+        android:src="@mipmap/blackboard_06"/>
+
+
+</LinearLayout>

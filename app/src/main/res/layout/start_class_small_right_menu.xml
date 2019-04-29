@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/start_class_right_menu_small_width"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+    android:layout_marginTop="@dimen/start_class_top_bar_height"
+    android:background="#FDFEFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.hhkj.dyedu.view.ScaleImageView
+                android:id="@+id/ivRightMenu01"
+                android:layout_width="@dimen/px_116"
+                android:layout_height="@dimen/px_116"
+                android:layout_marginBottom="@dimen/px_12"
+                android:layout_marginTop="@dimen/px_24"
+                android:src="@mipmap/new_53"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_01"
+                android:textColor="#5b5b5b"
+                android:textSize="@dimen/px_24"/>
+
+
+            <com.hhkj.dyedu.view.ScaleImageView
+                android:id="@+id/ivRightMenu02"
+                android:layout_width="@dimen/px_116"
+                android:layout_height="@dimen/px_116"
+                android:layout_marginBottom="@dimen/px_12"
+                android:layout_marginTop="@dimen/px_24"
+                android:src="@mipmap/new_54"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_02"
+                android:textColor="#5b5b5b"
+                android:textSize="@dimen/px_24"/>
+
+            <com.hhkj.dyedu.view.ScaleImageView
+                android:id="@+id/ivRightMenu03"
+                android:layout_width="@dimen/px_116"
+                android:layout_height="@dimen/px_116"
+                android:layout_marginBottom="@dimen/px_12"
+                android:layout_marginTop="@dimen/px_24"
+                android:src="@mipmap/new_55"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_03"
+                android:textColor="#5b5b5b"
+                android:textSize="@dimen/px_24"/>
+
+            <com.hhkj.dyedu.view.ScaleImageView
+                android:id="@+id/ivRightMenu04"
+                android:layout_width="@dimen/px_116"
+                android:layout_height="@dimen/px_116"
+                android:layout_marginBottom="@dimen/px_12"
+                android:layout_marginTop="@dimen/px_24"
+                android:src="@mipmap/new_56"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_04"
+                android:textColor="#5b5b5b"
+                android:textSize="@dimen/px_24"/>
+
+
+            <com.hhkj.dyedu.view.ScaleImageView
+                android:id="@+id/ivRightMenu05"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/dy_01"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_05"
+                android:textColor="#404040"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.hhkj.dyedu.view.ScaleImageView
+        android:id="@+id/ivStartClass"
+        android:layout_width="@dimen/px_144"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginBottom="@dimen/px_16"
+        android:src="@mipmap/new_44"/>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#87c444</color>
+
+    <color name="red_radio">@android:color/holo_red_dark</color>
+    <color name="green_radio">#2fea00</color>
+    <color name="orange_radio">#fe7f1f</color>
+    <color name="blue_radio">#0990f4</color>
+    <color name="purple_radio">#b702d8</color>
+    <color name="yellow_radio">#ffe300</color>
+    <color name="white_radio">#ffffff</color>
+
+    <color name="Black">#000000</color>
+
+    <color name="test">#8e211e1e</color>
+
+
+    <color name="checkBox">#FFDF00</color>
+
+
+    <color name="theme_blue">#86DBF4</color>
+</resources>

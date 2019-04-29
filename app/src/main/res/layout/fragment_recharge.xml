@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_40"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage,HardcodedText">
+
+    <ImageView
+        android:layout_width="@dimen/px_192"
+        android:layout_height="@dimen/px_192"
+        android:layout_marginTop="@dimen/px_103"
+        android:src="@mipmap/new_82"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_53"
+        android:text="@string/recharge_01"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/px_48"
+        tools:ignore="HardcodedText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_48"/>
+
+        <EditText
+            android:id="@+id/et01"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_85"
+            android:layout_marginLeft="@dimen/px_28"
+            android:layout_marginRight="@dimen/px_28"
+            android:background="@drawable/bg_25"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_48"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_02"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_48"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:layout_marginTop="@dimen/px_60"
+        android:background="#9B9B9B"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv01"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_85"
+            android:src="@mipmap/dy2_01"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/iv02"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_85"
+            android:src="@mipmap/dy_93"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:background="#9B9B9B"/>
+
+
+    <Button
+        android:id="@+id/btPay"
+        android:layout_width="@dimen/px_966"
+        android:layout_height="@dimen/px_130"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@drawable/bg_42"
+        android:text="￥ 1000.00  确认充值"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/px_48"/>
+
+
+</LinearLayout>

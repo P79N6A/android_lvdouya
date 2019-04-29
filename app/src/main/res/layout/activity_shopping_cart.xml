@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <include layout="@layout/top_title_bar_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_40"
+        android:paddingLeft="@dimen/px_28"
+        android:paddingRight="@dimen/px_28"
+        android:paddingTop="@dimen/px_40">
+
+        <ImageView
+            android:id="@+id/ivChooseAll"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:src="@mipmap/zx_108" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="3"
+            android:text="课程"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="数量"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="0.8"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/px_10"
+            android:text="金额"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_40" />
+    </LinearLayout>
+
+    <include layout="@layout/base_default_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_24"
+        android:layout_marginRight="@dimen/px_24">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="总计："
+            android:textColor="#e75345"
+            android:textSize="@dimen/px_50" />
+
+        <TextView
+            android:id="@+id/tvAllMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="￥ 00.00"
+            android:textColor="#e75345"
+            android:textSize="@dimen/px_50" />
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/btBuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_126"
+        android:layout_margin="@dimen/px_2"
+        android:layout_marginBottom="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_50"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/px_48"
+        rv:rv_backgroundColor="#FFDF00"
+        rv:rv_backgroundPressColor="#a9a9a9"
+        rv:rv_cornerRadius="@dimen/px_63"
+        rv:rv_isRippleEnable="false" />
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_40"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_50"
+        android:paddingTop="@dimen/px_50">
+
+        <ImageView
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:src="@mipmap/dy_110"/>
+
+        <TextView
+            android:id="@+id/tvVipTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_38"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_36"
+            tools:text="您的会员到期日为2018年06月13日21:46:35"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:background="#9B9B9B"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvVip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_371"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:background="#9B9B9B"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv01"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_86"
+            android:src="@mipmap/dy2_01"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv02"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_86"
+            android:src="@mipmap/dy_93"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv03"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_86"
+            android:src="@mipmap/dy_1000"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:background="#9B9B9B"/>
+
+    <Button
+        android:id="@+id/btPay"
+        android:layout_width="@dimen/px_966"
+        android:layout_height="@dimen/px_130"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@drawable/bg_42"
+        android:text="￥ 1000.00  确认充值"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/px_48"/>
+
+
+</LinearLayout>

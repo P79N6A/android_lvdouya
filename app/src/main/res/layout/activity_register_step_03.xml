@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFCFE"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_default_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="设置6-20位登录密码"
+            android:textColor="#858585"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写登录密码"
+            android:textColor="#404040"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/et01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请填写登录密码"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="#404040"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请再次确认登录密码"
+            android:textColor="#404040"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请填写登录密码"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="#404040"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"/>
+    <Button
+        android:id="@+id/bt04"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_green_gray"
+        android:textColor="@drawable/color_white_gray"
+        android:text="完成注册"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

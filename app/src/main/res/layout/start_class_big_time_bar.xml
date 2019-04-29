@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipChildren="false"
+    android:id="@+id/layoutTimeBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+    android:layout_height="match_parent">
+    <!--<ImageView-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <!--<View-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:id="@+id/viewProgress"-->
+        <!--android:layout_width="13dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#ffffff"/>-->
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:id="@+id/pppp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="36dp"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/bar_2"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvProgress"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:paddingLeft="3dp"
+            android:text="1"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTimeBar"
+        android:text="0"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#74b53c"
+        android:background="@mipmap/broadcast_10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+</RelativeLayout>

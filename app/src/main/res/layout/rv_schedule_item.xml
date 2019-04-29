@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_200"
+    android:background="#979797"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/px_2"
+        android:layout_marginTop="@dimen/px_2"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#85A5FF"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="9：00~11：00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/px_30"/>
+
+        <TextView
+            android:id="@+id/tv02"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#B37FEB"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="9：00~11：00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/px_30"/>
+
+        <TextView
+            android:id="@+id/tv03"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF7A45"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="9：00~11：00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/px_30"/>
+
+        <TextView
+            android:id="@+id/tv04"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFC53D "
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="9：00~11：00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/px_30"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_2"
+        android:background="#fff"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/px_6"
+            android:src="@mipmap/dy2_09"/>
+    </RelativeLayout>
+
+</LinearLayout>

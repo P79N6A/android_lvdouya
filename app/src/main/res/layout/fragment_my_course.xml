@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="#ff7f7f"
+    tools:ignore="PxUsage">
+
+    <com.flyco.roundview.RoundLinearLayout
+
+        android:id="@+id/layoutVip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_172"
+        android:layout_marginBottom="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        rv:rv_backgroundColor="#ffffff"
+        rv:rv_cornerRadius_BL="@dimen/corner_86_px"
+        rv:rv_cornerRadius_TL="@dimen/corner_86_px">
+
+        <ImageView
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:layout_marginLeft="@dimen/px_22"
+            android:src="@mipmap/content_18"/>
+
+        <TextView
+            android:id="@+id/tvVipS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_16"
+            android:layout_marginRight="@dimen/px_16"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="您的会员到期日为2018年06月13日21:46:35，现享有全部会员课程免费权利！"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_40"/>
+
+        <TextView
+            android:id="@+id/tvVip"
+            android:layout_width="@dimen/px_200"
+            android:layout_height="match_parent"
+            android:background="#FD7B63"
+            android:gravity="center"
+            android:text="@string/personal_11"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/px_36"/>
+    </com.flyco.roundview.RoundLinearLayout>
+
+
+    <include layout="@layout/base_default_list"/>
+</LinearLayout>

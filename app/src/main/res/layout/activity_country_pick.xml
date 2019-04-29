@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_bar_02" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_90"
+            android:layout_marginBottom="@dimen/px_45"
+            android:layout_marginLeft="@dimen/px_45"
+            android:layout_marginRight="@dimen/px_45"
+            android:layout_marginTop="@dimen/px_45"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:rv_backgroundColor="#EEEFF3"
+            app:rv_cornerRadius="@dimen/px_9">
+
+            <ImageView
+                android:layout_width="@dimen/px_39"
+                android:layout_height="@dimen/px_39"
+                android:layout_marginLeft="@dimen/px_24"
+                android:layout_marginRight="@dimen/px_24"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@null"
+                android:hint="@string/area_01"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="#8e8e93"
+                android:textSize="@dimen/px_36" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.sahooz.library.SideBar
+                android:layout_marginRight="@dimen/px_30"
+                android:id="@+id/side"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_1080"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:letterColor="#047BFF"
+                app:letterSize="@dimen/px_36"
+                app:selectColor="#00ff00" />
+
+            <TextView
+                android:id="@+id/tv_letter"
+                android:layout_width="@dimen/px_180"
+                android:layout_height="@dimen/px_180"
+                android:layout_centerInParent="true"
+                android:background="#80000000"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

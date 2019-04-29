@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.youth.banner.Banner
+        tools:background="#ff0000"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="208dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#E6E6E6"/>
+    <LinearLayout
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@mipmap/home_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_marginLeft="7dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#4d4d4d"
+             android:textSize="24sp"
+             android:text="课程推荐"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCourseRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#E6E6E6"/>
+
+
+</LinearLayout>

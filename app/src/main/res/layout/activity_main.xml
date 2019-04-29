@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhkj.dyedu.ui.activity.MainActivity"
+    tools:ignore="PxUsage,HardcodedText,ContentDescription,TextFields">
+
+
+    <!--小屏时布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <!--头部栏-->
+        <include layout="@layout/start_class_top_bar"/>
+        <!--左侧ppt缩略图列表-->
+        <include layout="@layout/start_class_small_left_ppt_list"/>
+
+
+        <include layout="@layout/start_class_small_right_menu"/>
+
+        <include layout="@layout/start_class_small_tools_01"/>
+
+        <include layout="@layout/start_class_small_tools_03"/>
+
+        <include layout="@layout/start_class_small_tools_04"/>
+
+        <include layout="@layout/start_class_small_tools_05"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:layout_marginTop="@dimen/start_class_top_bar_height"
+            android:background="#cccccc"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+            android:background="#cccccc"/>
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+            android:layout_marginLeft="@dimen/start_class_left_ppt_width"
+            android:layout_marginTop="@dimen/start_class_top_bar_height"
+            android:background="#cccccc"/>
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+            android:layout_marginRight="@dimen/start_class_right_menu_small_width"
+            android:layout_marginTop="@dimen/start_class_top_bar_height"
+            android:background="#cccccc"/>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--网页-->
+        <com.hhkj.dyedu.view.PptWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:overScrollMode="never"/>
+
+    </FrameLayout>
+
+
+    <include layout="@layout/start_class_big_right_tools_bar"/>
+
+    <include layout="@layout/start_class_big_right_iv_tools"/>
+
+    <include layout="@layout/start_class_big_time_bar"/>
+
+    <include layout="@layout/start_class_bottom_bar"/>
+
+    <include layout="@layout/narrow_tools_icon"/>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+</FrameLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <include layout="@layout/top_title_bar_01" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_10" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_28"
+        android:paddingRight="@dimen/px_28">
+
+        <LinearLayout
+            android:id="@+id/layoutChooseAll"
+            android:layout_width="@dimen/px_180"
+            android:layout_height="@dimen/px_100"
+            android:background="@drawable/bg_23"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_16"
+            android:paddingRight="@dimen/px_16">
+
+            <ImageView
+                android:id="@+id/ivChooseAll"
+                android:layout_width="@dimen/px_48"
+                android:layout_height="@dimen/px_48"
+                android:src="@mipmap/dy_42" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_16"
+                android:text="全选"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv01"
+            android:layout_width="@dimen/px_250"
+            android:layout_height="@dimen/px_100"
+            android:layout_marginRight="@dimen/px_36"
+            android:src="@mipmap/dy2_12" />
+
+        <ImageView
+            android:id="@+id/iv02"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:src="@mipmap/dy2_05" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_10" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="@dimen/px_120"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="220"
+            android:gravity="center_vertical"
+            android:text="家长账号"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:gravity="center"
+            android:text="性别"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:gravity="center"
+            android:text="年龄"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:gravity="center"
+            android:text="学习情况"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="#D9000000"
+            android:textSize="@dimen/px_36" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2" />
+
+    <include layout="@layout/base_default_list" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E281B1</color>
+    <color name="colorPrimaryDark">#E281B1</color>
+    <color name="colorAccent">#E281B1</color>
+    <color name="black">#000000</color>
+    <color name="color_white">#FFFFFF</color><!--白色 -->
+
+
+    <!--仪表盘刻度颜色-->
+
+
+    <!--日历颜色-->
+    <color name="color_calendar_text_no_state">#999999</color>
+
+
+    <!--折线图-->
+    <color name="tab02">#A2A2A2</color>
+
+
+    <color name="color_line">#999999</color><!--白色 -->
+</resources>

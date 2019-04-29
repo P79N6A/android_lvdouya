@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_120">
+
+        <ImageView
+            android:layout_width="@dimen/px_64"
+            android:layout_height="@dimen/px_64"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_26"
+            android:src="@mipmap/home_1"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

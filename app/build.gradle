@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+
+android {
+    //设置APK生成名称
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+
+            // 输出apk名称为great_v1.0_wandoujia.apk
+            def fileName = "${variant.getBaseName()}" + "_${defaultConfig.versionName}" + "_${releaseTime()}" + ".apk"
+            outputFileName = fileName
+        }
+    }
+    //解决“Cannot merge new index xxx into a non-jumbo instruction”的问题
+//    dexOptions {
+//        jumboMode true
+//    }
+    //签名文件配置
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'hhkj123456'
+            storeFile file('D:/key/hhkj.jks')
+            storePassword 'hhkj123456'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.hhkj.dyedu"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 26
+        versionName "1.0.26"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+        }
+        debug {
+            signingConfig signingConfigs.config
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+        }
+    }
+    productFlavors {
+
+        //绿豆芽
+        ldy {
+            applicationId 'com.hhkj.dyedu'
+            // 定义app_icon字段，在AndroidManifest.xml文件中用到
+            manifestPlaceholders = [app_icon: "@mipmap/logo"]
+            // 自动生成@string/app_name为demo
+            resValue "string", "app_name", "绿豆芽"
+            //
+            buildConfigField("String", "API_HOST", "\"http://jkzz.douyaedu.com\"")
+        }
+        //课轻松
+        kqs {
+            applicationId 'com.hhkj.kqs'
+            // 定义app_icon字段，在AndroidManifest.xml文件中用到
+            manifestPlaceholders = [app_icon: "@mipmap/kqs_logo"]
+            // 自动生成@string/app_name为demo
+            resValue "string", "app_name", "课轻松"
+            //
+            buildConfigField("String", "API_HOST", "\"http://kqs.douyaedu.com\"")
+        }
+
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //======================
+
+    //开发基础库
+
+    compile 'com.jakewharton:butterknife:8.8.1'//事件绑定
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.google.code.gson:gson:2.8.5'//json解析
+    compile 'org.greenrobot:eventbus:3.1.1' //事件总线
+    compile 'com.jaeger.statusbarutil:library:1.5.1'//状态栏沉浸
+    compile 'com.orhanobut:logger:2.2.0'//日志
+    compile 'org.litepal.android:core:1.6.1'//数据库
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'//圆角图片
+    compile 'com.yanzhenjie:permission:1.1.2'//权限管理
+    compile 'top.zibin:Luban:1.1.3' //图片压缩
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'//图片选择器 配合图片压缩权限管理一起使用
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-3'//刷新
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'//adapter
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.4'//网络
+    implementation 'com.github.rubensousa:gravitysnaphelper:1.5'//列表粘性
+    implementation 'com.blankj:utilcode:1.16.4'//Android 常用工具类
+    //其他
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha1'
+    compile 'com.youth.banner:banner:1.4.10'
+    //自己的包
+    compile project(path: ':common')
+    compile 'com.oushangfeng:PinnedSectionItemDecoration:1.2.5'
+    //乐播
+    compile(name: 'hpplay-link', ext: 'aar')
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+    compile project(path: ':country')
+//    implementation "com.google.guava:guava:23.0-android"
+}

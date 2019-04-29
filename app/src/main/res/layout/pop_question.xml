@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_37"
+        android:scaleType="fitXY"
+        android:src="@mipmap/new_98"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="游乐山"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/px_36"/>
+
+                <TextView
+                    android:id="@+id/tv02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="　　去年暑假，我回到久别的家乡，和妈妈一道游览了风景迷人的乐山。
+　　我们沿着山路拾级而上。只见苍松翠柏遮天蔽日，一束束光柱和山间弥漫的晨雾交映一起，形成无数个五彩的光环，叫不出名的鸟儿，叽叽喳喳的鸣叫声，为这里增添了无限生机。
+　　半山腰有一块草地。油炸豆腐干！麻辣豆腐脑！个体商贩的叫卖声此起彼伏，给游人增添了无限乐趣，使你情不自禁地去领略乐山小吃的风味。
+　　来到山顶，我和妈妈席地而坐，眺望四周景色。西面的峨嵋山仿佛近在咫尺，大渡河水波涛滚滚，北面的乐山城马路笔直，高楼林立，高低不一，层层堆叠；往南是宽阔的马路，通向五通桥。
+　　我站在乐山上，真是太美了！我喜欢家乡的乐山，我更喜欢我的家乡。
+
+１、写出下面词语的近义词。
+　　舒畅（　　　）　增添（　　　）　眺望（　　　）　乐趣（　　　）　
+２、在文中找出两个成语写下来。　　　　　　
+３、把短文第２～４自然段每段开头的第一个句子画下来，读一读，想想作者是按"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/px_36"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_52"
+            android:paddingRight="@dimen/px_60">
+
+            <ImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_marginRight="@dimen/px_30"
+                android:layout_toLeftOf="@id/ivRight"
+                android:src="@mipmap/competition_06"/>
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/competition_07"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivBottom01"
+        android:layout_width="@dimen/px_68"
+        android:layout_height="@dimen/px_68"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/px_150"
+        android:src="@mipmap/new_52"/>
+
+    <ImageView
+        android:id="@+id/ivBottom02"
+        android:layout_width="@dimen/px_68"
+        android:layout_height="@dimen/px_68"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/px_63"
+        android:src="@mipmap/new_49"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:layout_width="@dimen/px_292"
+        android:layout_height="@dimen/px_74"
+        android:layout_marginLeft="@dimen/px_100"
+        android:gravity="center"
+        android:text="提问环节"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px_48"
+        rv:rv_backgroundColor="#FFB32F"
+        rv:rv_cornerRadius="@dimen/px_20"/>
+
+</FrameLayout>

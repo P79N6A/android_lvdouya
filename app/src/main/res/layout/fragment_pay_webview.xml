@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="39"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/px_120"
+        android:layout_height="@dimen/px_120"
+        android:src="@mipmap/dy_94"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33"/>
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="￥ 1000.00"
+        android:textColor="#FFFA541C"
+        android:textSize="@dimen/px_72"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49"/>
+
+
+
+    <ImageView
+        android:id="@+id/ivQrCode"
+        android:layout_width="@dimen/px_400"
+        android:layout_height="@dimen/px_400"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="@dimen/px_400"
+        android:layout_height="@dimen/px_400"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:text="请用微信扫描二维码进行支付"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/px_36"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"/>
+</LinearLayout>

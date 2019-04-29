@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px_508"
+    android:layout_height="@dimen/px_500"
+    android:background="@mipmap/new_42"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_26"
+        android:orientation="horizontal">
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout01"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_19"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_04"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout02"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_marginRight="@dimen/px_44"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_05"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout03"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_23"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_06"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_26"
+        android:layout_marginTop="@dimen/px_10"
+        android:orientation="horizontal">
+
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout04"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_07"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout05"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_marginRight="@dimen/px_44"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_25"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_08"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout06"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_100"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_09"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_26"
+        android:layout_marginTop="@dimen/px_10"
+        android:orientation="horizontal">
+
+        <com.hhkj.dyedu.view.ScaleLinearLayout
+            android:id="@+id/layout07"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:src="@mipmap/new_27"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="@string/tool_10"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_24"/>
+
+        </com.hhkj.dyedu.view.ScaleLinearLayout>
+    </LinearLayout>
+</LinearLayout>

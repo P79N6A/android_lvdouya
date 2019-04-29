@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <include layout="@layout/top_title_bar_05" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_280"
+        android:scaleType="fitXY"
+        android:src="@mipmap/helper_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_200"
+                android:layout_height="@dimen/px_260"
+                android:src="@mipmap/helper_04" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:gravity="center"
+                android:text="您的声音，我们用心在听\n400-000-0000"
+                android:textColor="#6b6b6b"
+                android:textSize="@dimen/px_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_200"
+                android:layout_height="@dimen/px_260"
+                android:src="@mipmap/helper_03" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:gravity="center"
+                android:text="及时响应，一对一在线服务\n"
+                android:textColor="#6b6b6b"
+                android:textSize="@dimen/px_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_200"
+                android:layout_height="@dimen/px_260"
+                android:src="@mipmap/helper_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:gravity="center"
+                android:text="专业团队，24小时极速跟进\n"
+                android:textColor="#6b6b6b"
+                android:textSize="@dimen/px_26" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

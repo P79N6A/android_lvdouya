@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_40"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="@dimen/px_192"
+        android:layout_height="@dimen/px_192"
+        android:src="@mipmap/new_81" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="@dimen/px_480"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash_01"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_36" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_84"
+            android:layout_marginTop="@dimen/px_22"
+            android:background="@drawable/bg_25"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:singleLine="true"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_22"
+            android:layout_marginTop="@dimen/px_22"
+            android:text="@string/cash_02"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_36" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_84"
+            android:background="@drawable/bg_25"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:singleLine="true"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_22"
+            android:layout_marginTop="@dimen/px_22"
+            android:text="@string/cash_03"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/px_36" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_84"
+            android:background="@drawable/bg_25"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px_84"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:singleLine="true"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/px_48" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_24"
+                android:layout_marginRight="@dimen/px_24"
+                android:text="元"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginLeft="@dimen/px_38"
+        android:layout_marginRight="@dimen/px_38"
+        android:background="#9B9B9B" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btPay"
+        android:layout_width="@dimen/px_966"
+        android:layout_height="@dimen/px_130"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@drawable/bg_42"
+        android:text="@string/cash_04"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/px_48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

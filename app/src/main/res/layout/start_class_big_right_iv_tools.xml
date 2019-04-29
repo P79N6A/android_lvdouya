@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMenuRightControl2"
+    android:layout_width="@dimen/px_80"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layout_marginBottom="@dimen/start_class_bottom_bar_height"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_900"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/new_97"/>
+
+</RelativeLayout>

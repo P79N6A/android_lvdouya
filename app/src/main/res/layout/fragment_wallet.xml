@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="PxUsage,RtlHardcoded,ContentDescription">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_172"
+        android:background="@drawable/bg_41"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_74"
+        android:paddingRight="@dimen/px_74">
+
+        <ImageView
+            android:layout_width="@dimen/px_52"
+            android:layout_height="@dimen/px_52"
+            android:src="@mipmap/new_92"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_32"
+            android:textColor="#8d8c8c"
+            android:textSize="@dimen/px_40"
+            tools:text="余额：100.00元"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_172"
+        android:layout_marginTop="@dimen/px_16"
+        android:background="@drawable/bg_41"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_74"
+        android:paddingRight="@dimen/px_74">
+
+        <ImageView
+            android:layout_width="@dimen/px_52"
+            android:layout_height="@dimen/px_52"
+            android:src="@mipmap/dy_110"/>
+        <TextView
+            android:id="@+id/tvVipTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_32"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#8d8c8c"
+            android:textSize="@dimen/px_40"
+            tools:text="您的会员到期日为2018年06月13日21:46:35"/>
+
+        <ImageView
+            android:id="@+id/ivBuyVip"
+            android:layout_width="@dimen/px_284"
+            android:layout_height="@dimen/px_85"
+            android:src="@mipmap/new_95"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_16"
+        android:background="@drawable/bg_40"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_60"
+        android:paddingTop="@dimen/px_60">
+
+        <Button
+            android:id="@+id/layout01"
+            android:layout_width="@dimen/px_454"
+            android:layout_height="@dimen/px_563"
+            android:background="@mipmap/new_86"/>
+
+        <Button
+            android:id="@+id/layout02"
+            android:layout_width="@dimen/px_454"
+            android:layout_height="@dimen/px_563"
+            android:layout_marginLeft="@dimen/px_47"
+            android:layout_marginRight="@dimen/px_47"
+            android:background="@mipmap/new_88"/>
+
+        <Button
+            android:id="@+id/layout03"
+            android:layout_width="@dimen/px_454"
+            android:layout_height="@dimen/px_563"
+            android:background="@mipmap/new_94"/>
+
+    </LinearLayout>
+</LinearLayout>

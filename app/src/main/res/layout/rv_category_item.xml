@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/px_67"
+    android:layout_marginBottom="@dimen/px_20"
+    android:layout_marginLeft="@dimen/px_30"
+    android:layout_marginRight="@dimen/px_30"
+    android:layout_marginTop="@dimen/px_20"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivHead"
+        android:layout_width="@dimen/px_67"
+        android:layout_height="@dimen/px_67"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_21"
+        android:singleLine="true"
+        android:textColor="#989898"
+        android:textSize="@dimen/px_32"
+        tools:text="小汽车拼装课程"/>
+
+
+</LinearLayout>

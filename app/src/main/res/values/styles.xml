@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <!--启动页面主题-->
+    <style name="Theme.Splash" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/login_bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Blue" parent="AppTheme">
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryDark">@color/theme_blue</item>
+        <item name="colorAccent">@color/theme_blue</item>
+    </style>
+
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/checkBox</item>
+        <item name="android:colorControlNormal">@color/checkBox</item>
+    </style>
+
+    <style name="login_input_style">
+        <item name="android:paddingLeft">@dimen/px_34</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">@dimen/px_34</item>
+        <item name="android:layout_width">@dimen/px_680</item>
+        <item name="android:layout_height">@dimen/px_117</item>
+    </style>
+
+
+</resources>

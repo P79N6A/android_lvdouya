@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_11"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:background="@drawable/bg_34">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/px_30"
+            android:src="@mipmap/list_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:text="纪律提醒"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_36" />
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"
+        android:layout_weight="1" />
+
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="@dimen/px_400"
+        android:layout_height="@dimen/px_400"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:sriv_border_color="#7451B9"
+        app:sriv_border_width="@dimen/px_1"
+        app:sriv_left_bottom_corner_radius="@dimen/px_10"
+        app:sriv_left_top_corner_radius="@dimen/px_10"
+        app:sriv_right_bottom_corner_radius="@dimen/px_10"
+        app:sriv_right_top_corner_radius="@dimen/px_10" />
+
+    <TextView
+        android:id="@+id/tv_disRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px_20"
+        android:singleLine="true"
+        android:text="纪律提醒"
+        android:textColor="#383838"
+        android:textSize="@dimen/px_36" />
+</LinearLayout>
